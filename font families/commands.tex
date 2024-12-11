@@ -1,6 +1,6 @@
 % Anne of Green Gables from Project Gutenberg:
 % https://www.gutenberg.org/cache/epub/45/pg45-images.html
-% Excerpt from Chapter 2, Matthew Cuthbert Is Surprised
+% Excerpts from Chapter 2, Matthew Cuthbert Is Surprised
 \documentclass[a4paper]{article}
 
 \title{Anne of Green Gables}
@@ -10,37 +10,49 @@
 \begin{document}
 \maketitle
 
-% Commands with single paragraph arguments
-\textsf{They had driven over the crest of a hill. Below them was a pond, looking almost like a river so long and winding was it. A bridge spanned it midway and from there to its lower end, where an amber-hued belt of sand-hills shut it in from the dark blue gulf beyond, the water was a glory of many shifting hues---the most spiritual shadings of crocus and rose and ethereal green, with other elusive tintings for which no name has ever been found. Above the bridge the pond ran up into fringing groves of fir and maple and lay all darkly translucent in their wavering shadows. Here and there a wild plum leaned out from the bank like a white-clad girl tiptoeing to her own reflection. From the marsh at the head of the pond came the clear, mournfully-sweet chorus of the frogs. There was a little gray house peering around a white apple orchard on a slope beyond and, although it was not yet quite dark, a light was shining from one of its windows.}
+% Individual paragraphs as arguments
+Every example starts with a paragraph, and this obligatory first paragraph appears in the document's default font family. What is the document's default font? It seems to be serif by default.
+
+\textrm{This paragraph is explicitly serif and uses a font like Times New Roman or Times. Its chic variable width text imparts competence, professionalism, and decorum to any resume.}
+
+This outside paragraph will be rendered with the document's default font family. However, the next paragraph will show a clear visual difference in font!
+
+\textsf{This paragraph illustrates variable width sans-serif font. Does it show Helvetica, Verdana, or something else? In this casual and relaxed paragraph of variable width text, the quick brown fox jumps over the lazy dog.}
+
+This regular paragraph will flaunt the default font again. In the words of Monty Python's Flying Circus, ``And now for something completely different.''
+
+\texttt{This disparate paragraph will demonstrate a monospace font like Lucida Console or Courier New. Bleep, bloop; this is an ideal font family for exhibiting code snippets. ``Hello World!''}
+
+Yet again, the font reverts to the default. Here are some more examples using public domain excerpts! The next paragraph is yet again explicitly serif, and the 2 paragraphs after it are sans-serif and monospace, respectively.
+
+\textrm{They had driven over the crest of a hill. Below them was a pond, looking almost like a river so long and winding was it. A bridge spanned it midway and from there to its lower end, where an amber-hued belt of sand-hills shut it in from the dark blue gulf beyond, the water was a glory of many shifting hues---the most spiritual shadings of crocus and rose and ethereal green, with other elusive tintings for which no name has ever been found. Above the bridge the pond ran up into fringing groves of fir and maple and lay all darkly translucent in their wavering shadows. Here and there a wild plum leaned out from the bank like a white-clad girl tiptoeing to her own reflection. From the marsh at the head of the pond came the clear, mournfully-sweet chorus of the frogs. There was a little gray house peering around a white apple orchard on a slope beyond and, although it was not yet quite dark, a light was shining from one of its windows.}
 
 \textsf{``That's Barry's pond,'' said Matthew.}
 
-\textsf{``Oh, I don't like that name, either. I shall call it---let me see---the Lake of Shining Waters. Yes, that is the right name for it. I know because of the thrill. When I hit on a name that suits exactly it gives me a thrill. Do things ever give you a thrill?''}
+\texttt{``Oh, I don't like that name, either. I shall call it---let me see---the Lake of Shining Waters. Yes, that is the right name for it. I know because of the thrill. When I hit on a name that suits exactly it gives me a thrill. Do things ever give you a thrill?''}
 
-\textrm{Matthew ruminated.}
+% Specific text within a paragraph as arguments
+The sentence showcases \textrm{how to force serif text words} into the middle of it. Can an extremely long sentence be a paragraph, or must a paragraph have 2 or more sentences?
 
-\textrm{``Well now, yes. It always kind of gives me a thrill to see them ugly white grubs that spade up in the cucumber beds. I hate the look of them.''}
+This mundane paragraph contains \textsf{sans-serif} words here, and even more \textsf{words in sans-serif here}. However, this drab sentence does not.
 
-\textrm{``Oh, I don't think that can be exactly the same kind of a thrill. Do you think it can? There doesn't seem to be much connection between grubs and lakes of shining waters, does there? But why do other people call it Barry's pond?''}
+Here is a paragraph that \texttt{injects monospace} text into the mid\texttt{dle of wo}rds. Is nothing safe from the monospace font family? No\texttt{p}e!
 
-\textrm{``I reckon because Mr. Barry lives up there in that house. Orchard Slope's the name of his place. If it wasn't for that big bush behind it you could see Green Gables from here. But we have to go over the bridge and round by the road, so it's near half a mile further.''}
+Mat\textrm{thew rumin}ated.
 
-\texttt{``Has Mr. Barry any little girls? Well, not so very little either---about my size.''}
+``Well now, yes. \textsf{It always kind of gives me a thrill to see them ugly white grubs that spade up in the cucumber beds.} I hate the look of them.''
 
-\texttt{``He's got one about eleven. Her name is Diana.''}
-
-\texttt{``Oh!'' with a long indrawing of breath. ``What a perfectly lovely name!''}
-
-\texttt{``Well now, I dunno. There's something dreadful heathenish about it, seems to me. I'd ruther Jane or Mary or some sensible name like that. But when Diana was born there was a schoolmaster boarding there and they gave him the naming of her and he called her Diana.''}
+``Oh, I don't think that can be exactly the same kind of a thrill. \texttt{Do you think it can? There doesn't seem to be much connection between grubs and lakes of shining waters, does there?} But why do other people call it Barry's pond?''
 
 % Nested commands
-\textsf{``I wish there had been a schoolmaster like that around when I was born, then. Oh, here we are at the bridge. I'm going to shut my eyes tight. \textrm{I'm always afraid going over bridges. I can't help imagining that perhaps, just as we get to the middle, they'll crumple up like a jack-knife and nip us. So I shut my eyes.} But I always have to open them for all when I think we're getting near the middle. Because, you see, if the bridge did crumple up I'd want to see it crumple. \texttt{What a jolly rumble it makes! I always like the rumble part of it. Isn't it splendid there are so many things to like in this world?} There, we're over. Now I'll look back. Good night, dear Lake of Shining Waters. I always say good night to the things I love, just as I would to people. I think they like it. That water looks as if it was smiling at me.''}
+\textsf{Pleasant sans-serif text begins this humdrum paragraph which will establish how nested commands work. \textrm{Abruptly, the font family changes to officious serif,} and then, \texttt{just as suddenly, the font family updates to monospace!} Alas, no code snippets are available, and so the font returns to congenial sans-serif.}
 
-% Commands within paragraphs
-When they had driven up \textsf{the further hill and} around a corner Matthew said:
+This sentence initiates a new paragraph, delivered in the default font family, \textsf{and then immediately switches to sans-serif. The next sentence welcomes the satisfying change, \texttt{but then incongruous monospace text appears! Hoping for no further meddling, this paragraph attempts a third innocuous sentence, \textrm{but serif font invades! The mildly curious reader ponders when, where, and how the next font change will occur,} when instantaneously, the text regresses to monospace! Without any use for this jarring font,} sans-serif reasserts itself, and the paragraph lumber forward. In conclusion, the paragraph showcased all 3 font families} plus the default.
 
-``We're pretty near \textrm{home now. That's Green} Gables over---''
+\texttt{``I reckon because Mr. Barry lives up there in that house. \textrm{Orchard Slope's the name of his place. }\textsf{If it wasn't for that big bush behind it you could see Green Gables from here.} But we have to go over the bridge and round by the road, so it's near half a mile further.''}
 
-``Oh, don't tell me,'' \texttt{she interrupted breathlessly, catching at his partially raised arm and shutting her eyes that she might not see his gesture.} ``Let me guess. I'm sure I'll guess right.''
+``Has \textsf{Mr. Barry any \texttt{little girls? Well, \textrm{not so} very little} either---about my} size.''
 
 \end{document}
+
+\section{}
