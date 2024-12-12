@@ -11,48 +11,80 @@
 \begin{document}
 \maketitle
 
+% Switches around paragraphs
+As usual, this paragraph begins with an unremarkable sentence that displays the default font family. \sffamily However, in the midst of this paragraph, a switch changes the font to sans-serif. This font will be used in the next paragraph, too!
+
+This sentence continues in sans-serif until the next switch is encou\ttfamily ntered, and now the font-family is monospace. Rather than insert a code example into this code example to exploit this fixed-width text, \rmfamily the font family returns to serif for the rest of this document.
+
 % Chapter 2, Matthew Cuthbert Is Surprised
+\sffamily ``He's got one about eleven. Her name is Diana.''
+
+``Oh!'' with a long indrawing of breath. ``What a perfectly lovely name!''
+
+\ttfamily ``Well now, I dunno. There's something dreadful heathenish about it, seems to me. I'd ruther Jane or Mary or some sensible name like that. But when Diana was born there was a schoolmaster boarding there and they gave him the naming of her and he called her Diana.''
+
+``I wish there had been a schoolmaster like that around when I was born, then. Oh, here we are at the bridge. I'm going to shut my eyes tight. I'm always afraid going over bridges. I can't help imagining that perhaps, just as we get to the middle, they'll crumple up like a jack-knife and nip us. So I shut my eyes. But I always have to open them for all when I think we're getting near the middle. Because, you see, if the bridge did crumple up I'd want to see it crumple. What a jolly rumble it makes! I always like the rumble part of it. Isn't it splendid there are so many things to like in this world? There, we're over. Now I'll look back. Good night, dear Lake of Shining Waters. I always say good night to the things I love, just as I would to people. I think they like it. That water looks as if it was smiling at me.''
+
+\rmfamily When they had driven up the further hill and around a corner Matthew said:
+
+``We're pretty near home now. That's Green Gables over---''
 
 % Blocks around switches
-{\sffamily She opened her eyes and looked about her. They were on the crest of a hill. The sun had set some time since, but the landscape was still clear in the mellow afterlight. To the west a dark church spire rose up against a marigold sky. Below was a little valley and beyond a long, gently-rising slope with snug farmsteads scattered along it. From one to another the child's eyes darted, eager and wistful. At last they lingered on one away to the left, far back from the road, dimly white with blossoming trees in the twilight of the surrounding woods. Over it, in the stainless southwest sky, a great crystal-white star was shining like a lamp of guidance and promise.
+{\sffamily The text before this block is serif, but inside this block, a switch makes the text sans-serif!}
+
+The switch's effect does not affect any text outside the block, and thus, the font is serif yet again.
+
+{\ttfamily Inside this next block, the monospace switch makes the text fixed-width. Still no code examples within this code example exist to make this paragraph multiline.}
+
+Externally, the text is serif and variable-width.
+
+{\rmfamily A switch inside this block maintains the serif text, and no visual difference is apparent.}
+
+As expected, the text is still serif here.
+
+{\sffamily``Oh, don't tell me,'' she interrupted breathlessly, catching at his partially raised arm and shutting her eyes that she might not see his gesture. ``Let me guess. I'm sure I'll guess right.''
+
+She opened her eyes and looked about her. They were on the crest of a hill. The sun had set some time since, but the landscape was still clear in the mellow afterlight. To the west a dark church spire rose up against a marigold sky. Below was a little valley and beyond a long, gently-rising slope with snug farmsteads scattered along it. From one to another the child's eyes darted, eager and wistful. At last they lingered on one away to the left, far back from the road, dimly white with blossoming trees in the twilight of the surrounding woods. Over it, in the stainless southwest sky, a great crystal-white star was shining like a lamp of guidance and promise.}
 
 ``That's it, isn't it?'' she said, pointing.
 
 Matthew slapped the reins on the sorrel's back delightedly.
 
-``Well now, you've guessed it! But I reckon Mrs. Spencer described it so's you could tell.''}
+{\ttfamily``Well now, you've guessed it! But I reckon Mrs. Spencer described it so's you could tell.''
 
-``No, she didn't---really she didn't. All she said might just as well have been about most of those other places. I hadn't any real idea what it looked like. But just as soon as I saw it I felt it was home. Oh, it seems as if I must be in a dream. Do you know, my arm must be black and blue from the elbow up, for I've pinched myself so many times today. Every little while a horrible sickening feeling would come over me and I'd be so afraid it was all a dream. Then I'd pinch myself to see if it was real---until suddenly I remembered that even supposing it was only a dream I'd better go on dreaming as long as I could; so I stopped pinching. But it is real and we're nearly home.''
+``No, she didn't---really she didn't. All she said might just as well have been about most of those other places. I hadn't any real idea what it looked like. But just as soon as I saw it I felt it was home. Oh, it seems as if I must be in a dream. Do you know, my arm must be black and blue from the elbow up, for I've pinched myself so many times today. Every little while a horrible sickening feeling would come over me and I'd be so afraid it was all a dream. Then I'd pinch myself to see if it was real---until suddenly I remembered that even supposing it was only a dream I'd better go on dreaming as long as I could; so I stopped pinching. But it is real and we're nearly home.''}
 
 With a sigh of rapture she relapsed into silence. Matthew stirred uneasily. He felt glad that it would be Marilla and not he who would have to tell this waif of the world that the home she longed for was not to be hers after all. They drove over Lynde's Hollow, where it was already quite dark, but not so dark that Mrs. Rachel could not see them from her window vantage, and up the hill and into the long lane of Green Gables. By the time they arrived at the house Matthew was shrinking from the approaching revelation with an energy he did not understand. It was not of Marilla or himself he was thinking or of the trouble this mistake was probably going to make for them, but of the child's disappointment. When he thought of that rapt light being quenched in her eyes he had an uncomfortable feeling that he was going to assist at murdering something---much the same feeling that came over him when he had to kill a lamb or calf or any other innocent little creature.
 
-{\rmfamily The yard was quite dark as they turned into it and the poplar leaves were rustling silkily all round it.
+The yard was quite dark as they turned into it and the poplar leaves were rustling silkily all round it.
 
-``Listen to the trees talking in their sleep,'' she whispered, as he lifted her to the ground. ``What nice dreams they must have!''
+{\rmfamily``Listen to the trees talking in their sleep,'' she whispered, as he lifted her to the ground. ``What nice dreams they must have!''
 
-Then, holding tightly to the carpet-bag which contained ``all her worldly goods,'' she followed him into the house.
+Then, holding tightly to the carpet-bag which contained ``all her worldly goods,'' she followed him into the house.}
 
 % Chapter 3, Marilla Cuthbert Is Surprised
-Marilla came briskly forward as Matthew opened the door. But when her eyes fell on the odd little figure in the stiff, ugly dress, with the long braids of red hair and the eager, luminous eyes, she stopped short in amazement.}
+Marilla came briskly forward as Matthew opened the door. But when her eyes fell on the odd little figure in the stiff, ugly dress, with the long braids of red hair and the eager, luminous eyes, she stopped short in amazement.
 
 ``Matthew Cuthbert, who's that?'' she ejaculated. ``Where is the boy?''
 
+% Commands within switches
+% Switches within commands
+
 ``There wasn't any boy,'' said Matthew wretchedly. ``There was only her.''
 
-{\ttfamily He nodded at the child, remembering that he had never even asked her name.
+He nodded at the child, remembering that he had never even asked her name.
 
 ``No boy! But there must have been a boy,'' insisted Marilla. ``We sent word to Mrs. Spencer to bring a boy.''
 
 ``Well, she didn't. She brought her. I asked the stationmaster. And I had to bring her home. She couldn't be left there, no matter where the mistake had come in.''
 
-``Well, this is a pretty piece of business!'' ejaculated Marilla.}
+``Well, this is a pretty piece of business!'' ejaculated Marilla.
 
 During this dialogue the child had remained silent, her eyes roving from one to the other, all the animation fading out of her face. Suddenly she seemed to grasp the full meaning of what had been said. Dropping her precious carpet-bag she sprang forward a step and clasped her hands.
 
 ``You don't want me!'' she cried. ``You don't want me because I'm not a boy! I might have expected it. Nobody ever did want me. I might have known it was all too beautiful to last. I might have known nobody really did want me. Oh, what shall I do? I'm going to burst into tears!''
 
-% Switches around paragraphs
-\sffamily Burst into tears she did. Sitting down on a chair by the table, flinging her arms out upon it, and burying her face in them, she proceeded to cry stormily. Marilla and Matthew looked at each other deprecatingly across the stove. Neither of them knew what to say or do. Finally Marilla stepped lamely into the breach.
+Burst into tears she did. Sitting down on a chair by the table, flinging her arms out upon it, and burying her face in them, she proceeded to cry stormily. Marilla and Matthew looked at each other deprecatingly across the stove. Neither of them knew what to say or do. Finally Marilla stepped lamely into the breach.
 
 ``Well, well, there's no need to cry so about it.''
 
@@ -60,7 +92,7 @@ During this dialogue the child had remained silent, her eyes roving from one to 
 
 Something like a reluctant smile, rather rusty from long disuse, mellowed Marilla's grim expression.
 
-\rmfamily``Well, don't cry any more. We're not going to turn you out-of-doors tonight. You'll have to stay here until we investigate this affair. What's your name?''
+``Well, don't cry any more. We're not going to turn you out-of-doors tonight. You'll have to stay here until we investigate this affair. What's your name?''
 
 The child hesitated for a moment.
 
@@ -68,7 +100,7 @@ The child hesitated for a moment.
 
 ``Call you Cordelia? Is that your name?''
 
-\ttfamily``No-o-o, it's not exactly my name, but I would love to be called Cordelia. It's such a perfectly elegant name.''
+``No-o-o, it's not exactly my name, but I would love to be called Cordelia. It's such a perfectly elegant name.''
 
 ``I don't know what on earth you mean. If Cordelia isn't your name, what is?''
 
@@ -76,84 +108,83 @@ The child hesitated for a moment.
 
 ``Unromantic fiddlesticks!'' said the unsympathetic Marilla. ``Anne is a real good plain sensible name. You've no need to be ashamed of it.''
 
-% Commands within switches
-\sffamily``Oh, I'm not ashamed of it,'' explained Anne, ``only I like Cordelia better. \textrm{I've always imagined that my name was Cordelia---at least, I always have of late years.} When I was young I used to imagine it was Geraldine, but I like Cordelia better now. But if you call me Anne please call me Anne spelled with an E.''
+``Oh, I'm not ashamed of it,'' explained Anne, ``only I like Cordelia better. I've always imagined that my name was Cordelia---at least, I always have of late years. When I was young I used to imagine it was Geraldine, but I like Cordelia better now. But if you call me Anne please call me Anne spelled with an E.''
 
 ``What difference does it make how it's spelled?'' asked Marilla with another rusty smile as she picked up the teapot.
 
-\textrm{``Oh, it makes such a difference. It looks so much nicer. When you hear a name pronounced can't you always see it in your mind, just as if it was printed out? I can; and A-n-n looks dreadful, but A-n-n-e looks so much more distinguished. If you'll only call me Anne spelled with an E I shall try to reconcile myself to not being called Cordelia.''}
+``Oh, it makes such a difference. It looks so much nicer. When you hear a name pronounced can't you always see it in your mind, just as if it was printed out? I can; and A-n-n looks dreadful, but A-n-n-e looks so much more distinguished. If you'll only call me Anne spelled with an E I shall try to reconcile myself to not being called Cordelia.''
 
 ``Very well, then, Anne spelled with an E, can you tell us how this mistake came to be made? We sent word to Mrs. Spencer to bring us a boy. Were there no boys at the asylum?''
 
-``Oh, yes, there was an abundance of them. But Mrs. Spencer said distinctly that you wanted a girl about eleven years old. \texttt{And the matron said she thought I would do. You don't know how delighted I was. I couldn't sleep all last night for joy.} Oh,'' she added reproachfully, turning to Matthew, ``why didn't you tell me at the station that you didn't want me and leave me there? If I hadn't seen the White Way of Delight and the Lake of Shining Waters it wouldn't be so hard.''
+``Oh, yes, there was an abundance of them. But Mrs. Spencer said distinctly that you wanted a girl about eleven years old. And the matron said she thought I would do. You don't know how delighted I was. I couldn't sleep all last night for joy. Oh,'' she added reproachfully, turning to Matthew, ``why didn't you tell me at the station that you didn't want me and leave me there? If I hadn't seen the White Way of Delight and the Lake of Shining Waters it wouldn't be so hard.''
 
 ``What on earth does she mean?'' demanded Marilla, staring at Matthew.
 
-\texttt{``She---she's just referring to some conversation we had on the road,'' said Matthew hastily. ``I'm going out to put the mare in, Marilla. Have tea ready when I come back.''}
+``She---she's just referring to some conversation we had on the road,'' said Matthew hastily. ``I'm going out to put the mare in, Marilla. Have tea ready when I come back.''
 
 ``Did Mrs. Spencer bring anybody over besides you?'' continued Marilla when Matthew had gone out.
 
-\rmfamily``She brought Lily Jones for herself. \textsf{Lily is only five years old and she is very beautiful and had nut-brown hair.} If I was very beautiful and had nut-brown hair would you keep me?''
+``She brought Lily Jones for herself. Lily is only five years old and she is very beautiful and had nut-brown hair. If I was very beautiful and had nut-brown hair would you keep me?''
 
 ``No. We want a boy to help Matthew on the farm. A girl would be of no use to us. Take off your hat. I'll lay it and your bag on the hall table.''
 
-\textsf{Anne took off her hat meekly. Matthew came back presently and they sat down to supper. But Anne could not eat. In vain she nibbled at the bread and butter and pecked at the crab-apple preserve out of the little scalloped glass dish by her plate. She did not really make any headway at all.}
+Anne took off her hat meekly. Matthew came back presently and they sat down to supper. But Anne could not eat. In vain she nibbled at the bread and butter and pecked at the crab-apple preserve out of the little scalloped glass dish by her plate. She did not really make any headway at all.
 
 ``You're not eating anything,'' said Marilla sharply, eying her as if it were a serious shortcoming. Anne sighed.
 
-``I can't. \texttt{I'm in the depths of despair.} Can you eat when you are in the depths of despair?''
+``I can't. I'm in the depths of despair. Can you eat when you are in the depths of despair?''
 
 ``I've never been in the depths of despair, so I can't say,'' responded Marilla.
 
-\texttt{``Weren't you? Well, did you ever try to imagine you were in the depths of despair?''}
+``Weren't you? Well, did you ever try to imagine you were in the depths of despair?''
 
 ``No, I didn't.''
 
-\ttfamily``Then I don't think you can understand what it's like. It's a very uncomfortable feeling indeed. When you try to eat a lump comes right up in your throat and you can't swallow anything, not even if it was a chocolate caramel. \textsf{I had one chocolate caramel once two years ago and it was simply delicious. I've often dreamed since then that I had a lot of chocolate caramels, but I always wake up just when I'm going to eat them.} I do hope you won't be offended because I can't eat. Everything is extremely nice, but still I cannot eat.''
+``Then I don't think you can understand what it's like. It's a very uncomfortable feeling indeed. When you try to eat a lump comes right up in your throat and you can't swallow anything, not even if it was a chocolate caramel. I had one chocolate caramel once two years ago and it was simply delicious. I've often dreamed since then that I had a lot of chocolate caramels, but I always wake up just when I'm going to eat them. I do hope you won't be offended because I can't eat. Everything is extremely nice, but still I cannot eat.''
 
 ``I guess she's tired,'' said Matthew, who hadn't spoken since his return from the barn. ``Best put her to bed, Marilla.''
 
-\textsf{Marilla had been wondering where Anne should be put to bed. She had prepared a couch in the kitchen chamber for the desired and expected boy. But, although it was neat and clean, it did not seem quite the thing to put a girl there somehow. But the spare room was out of the question for such a stray waif, so there remained only the east gable room. Marilla lighted a candle and told Anne to follow her, which Anne spiritlessly did, taking her hat and carpet-bag from the hall table as she passed. The hall was fearsomely clean; the little gable chamber in which she presently found herself seemed still cleaner.}
+Marilla had been wondering where Anne should be put to bed. She had prepared a couch in the kitchen chamber for the desired and expected boy. But, although it was neat and clean, it did not seem quite the thing to put a girl there somehow. But the spare room was out of the question for such a stray waif, so there remained only the east gable room. Marilla lighted a candle and told Anne to follow her, which Anne spiritlessly did, taking her hat and carpet-bag from the hall table as she passed. The hall was fearsomely clean; the little gable chamber in which she presently found herself seemed still cleaner.
 
 Marilla set the candle on a three-legged, three-cornered table and turned down the bedclothes.
 
-``I suppose you \textrm{have a nightgown?''} she questioned.
+``I suppose you have a nightgown?'' she questioned.
 
 Anne nodded.
 
-\textrm{``Yes, I have two. The matron of the asylum made them for me. They're fearfully skimpy. There is never enough to go around in an asylum, so things are always skimpy---at least in a poor asylum like ours. I hate skimpy night-dresses. But one can dream just as well in them as in lovely trailing ones, with frills around the neck, that's one consolation.''}
+``Yes, I have two. The matron of the asylum made them for me. They're fearfully skimpy. There is never enough to go around in an asylum, so things are always skimpy---at least in a poor asylum like ours. I hate skimpy night-dresses. But one can dream just as well in them as in lovely trailing ones, with frills around the neck, that's one consolation.''
 
 ``Well, undress as quick as you can and go to bed. I'll come back in a few minutes for the candle. I daren't trust you to put it out yourself. You'd likely set the place on fire.''
 
 % Switches within commands
-\textsf{When Marilla had gone Anne looked around her wistfully. The whitewashed walls were so painfully bare and staring that she thought they must ache over their own bareness. The floor was bare, too, except for a round braided mat in the middle such as Anne had never seen before. \ttfamily In one corner was the bed, a high, old-fashioned one, with four dark, low-turned posts. In the other corner was the aforesaid three-cornered table adorned with a fat, red velvet pincushion hard enough to turn the point of the most adventurous pin. Above it hung a little six-by-eight mirror. Midway between table and bed was the window, with an icy white muslin frill over it, and opposite it was the wash-stand. \rmfamily The whole apartment was of a rigidity not to be described in words, but which sent a shiver to the very marrow of Anne's bones. With a sob she hastily discarded her garments, put on the skimpy nightgown and sprang into bed where she burrowed face downward into the pillow and pulled the clothes over her head. When Marilla came up for the light various skimpy articles of raiment scattered most untidily over the floor and a certain tempestuous appearance of the bed were the only indications of any presence save her own.}
+When Marilla had gone Anne looked around her wistfully. The whitewashed walls were so painfully bare and staring that she thought they must ache over their own bareness. The floor was bare, too, except for a round braided mat in the middle such as Anne had never seen before. In one corner was the bed, a high, old-fashioned one, with four dark, low-turned posts. In the other corner was the aforesaid three-cornered table adorned with a fat, red velvet pincushion hard enough to turn the point of the most adventurous pin. Above it hung a little six-by-eight mirror. Midway between table and bed was the window, with an icy white muslin frill over it, and opposite it was the wash-stand. The whole apartment was of a rigidity not to be described in words, but which sent a shiver to the very marrow of Anne's bones. With a sob she hastily discarded her garments, put on the skimpy nightgown and sprang into bed where she burrowed face downward into the pillow and pulled the clothes over her head. When Marilla came up for the light various skimpy articles of raiment scattered most untidily over the floor and a certain tempestuous appearance of the bed were the only indications of any presence save her own.
 
 % Outside the above command, the previous switch was \ttfamily
 She deliberately picked up Anne's clothes, placed them neatly on a prim yellow chair, and then, taking up the candle, went over to the bed.
 
 ``Good night,'' she said, a little awkwardly, but not unkindly.
 
-\textrm{Anne's white face and big eyes \ttfamily appeared over the bedclothes with a startling suddenness.}
+Anne's white face and big eyes appeared over the bedclothes with a startling suddenness.
 
 ``How can you call it a good night when you know it must be the very worst night I've ever had?'' she said reproachfully.
 
 Then she dived down into invisibility again.
 
-\textrm{Marilla went slowly down to the kitchen and proceeded to wash the supper dishes. Matthew was smoking---a sure sign of perturbation of mind. \sffamily He seldom smoked, for Marilla set her face against it as a filthy habit; but at certain times and seasons he felt driven to it and then Marilla winked at the practice, realizing that a mere man must have some vent for his emotions.}
+Marilla went slowly down to the kitchen and proceeded to wash the supper dishes. Matthew was smoking---a sure sign of perturbation of mind. He seldom smoked, for Marilla set her face against it as a filthy habit; but at certain times and seasons he felt driven to it and then Marilla winked at the practice, realizing that a mere man must have some vent for his emotions.
 
 % Outside the above command, the previous switch was \ttfamily
 ``Well, this is a pretty kettle of fish,'' she said wrathfully. ``This is what comes of sending word instead of going ourselves. Richard Spencer's folks have twisted that message somehow. One of us will have to drive over and see Mrs. Spencer tomorrow, that's certain. This girl will have to be sent back to the asylum.''
 
 ``Yes, I suppose so,'' said Matthew reluctantly.
 
-\texttt{``You suppose so! \rmfamily Don't you know it?''}
+``You suppose so! Don't you know it?''
 
 % Outside the above command, the previous switch was \ttfamily
 ``Well now, she's a real nice little thing, Marilla. It's kind of a pity to send her back when she's so set on staying here.''
 
 ``Matthew Cuthbert, you don't mean to say you think we ought to keep her!''
 
-\texttt{Marilla's astonishment could not have been greater if \sffamily  Matthew had expressed a predilection for standing on his head.}
+Marilla's astonishment could not have been greater if Matthew had expressed a predilection for standing on his head.
 
 % Outside the above command, the previous switch was \ttfamily
 ``Well, now, no, I suppose not---not exactly,'' stammered Matthew, uncomfortably driven into a corner for his precise meaning. ``I suppose---we could hardly be expected to keep her.''
