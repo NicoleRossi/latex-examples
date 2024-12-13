@@ -76,7 +76,7 @@ Marilla came briskly forward as Matthew opened the door. But when her eyes fell 
 % \section{Overriding Switches in Blocks}
 % ------------------------------------------------------------
 
-{Outside, the font family is monospace, \sffamily but after the first switch in this block, it transforms to sans-serif. \rmfamily The next switch mutates the font family into serif.} The previous block is complete so the font family defaults to monospace again.
+{Outside, the font family is monospace, \sffamily but after the first switch in this block, it transforms to sans-serif. \rmfamily The next switch mutates the font family into serif.} The previous block is finished so the font family defaults to monospace again.
 
 % Chapter 3, Marilla Cuthbert Is Surprised
 {``There wasn't any boy,'' said Matthew wretchedly. \rmfamily``There was only her.''
@@ -90,13 +90,11 @@ He nodded at the child, remembering that he had never even asked her name.
 % ------------------------------------------------------------
 % \section{Commands within Switches}
 % ------------------------------------------------------------
-\sffamily This switch immediately applies the sans-serif font family but the upcoming command \textrm{shifts it to serif. The font stays variable-width and gains serifs} but loses its serifs out here. Inside the upcoming command, \texttt{the font family changes to fixed-width and regains serifs.}
+\sffamily This switch immediately applies the sans-serif font family but the upcoming command \textrm{shifts it to serif. The font stays variable-width and gains serifs,} but then it loses its serifs outside. Inside the upcoming command, \texttt{the font family changes to fixed-width and regains serifs.}
 
-Due to the following switch, \rmfamily the font family is now variable-width serif. In serif, l and I (or small-L and big-I) are easy to distinguish while \textsf{in sans-serif, l and I look virtually identical. Interestingly, l and 1 (or small-L and digit-one) are distinctive in sans-serif,} but l and 1 in serif virtually identical. The answer is either context clues or \texttt{fixed-width monospace, which makes l, I and 1 (or small L and big I, and digit 1) look unique. Obviously,} this must be why IDEs (or integrated development environments) use monospace!
+The previous switch for sans-serif is still active, but the next switch \rmfamily sets the font family to variable-width serif. In serif, l and I (or small-L and big-I) are easy to distinguish while \textsf{in sans-serif, l and I look virtually identical. Interestingly, l and 1 (or small-L and digit-one) are distinctive in sans-serif,} but l and 1 in serif look virtually identical! The solution is either context clues or \texttt{fixed-width monospace, which makes l, I and 1 (or small-L, big-I, and digit-one) look unique. Obviously,} this must be why IDEs (or integrated development environments) use monospace!
 
-In this section's final sample paragraph, \ttfamily the switch triggers the monospace font family. \textrm{} \textsf{}
-
-facilitates an immediate, radical departure from the default font family. Unfortunately, l and I somewhat undermine Sans-serif's reputation for clarity and readability \textrm{because l and I are very distinctive in serif. Yet 1 and l are hard to distinguish in serif} while 1 and l are clear in sans-serif.
+In this section's final sample paragraph, \ttfamily the switch triggers the monospace font family. The next command makes the font family serif. \textrm{This inescapable sentence exhibits the ubiquitous serif family. \textsf{This nested command converts the font family to equally pervasive sans-serif.}} Outside the nested commands' blocks, the font family returns to fixed-width monospace.
 
 % Chapter 3, Marilla Cuthbert Is Surprised
 \sffamily``Well, this is a pretty piece of business!'' ejaculated Marilla.
@@ -109,117 +107,32 @@ Burst into tears she did. \textsf{Sitting down on a chair by the table, flinging
 
 ``Well, well, there's no need to cry so about it.''
 
-``Yes, there is need!'' \ttfamily The child raised her head quickly, revealing a tear-stained face and trembling lips. ``You would cry, too, if you were an orphan and had come to a place you thought was going to be home and found that they didn't want you because you weren't a boy. Oh, this is the most tragical thing that ever happened to me!''
+``Yes, there is need!'' \ttfamily The child raised her head quickly, revealing a tear-stained face and trembling lips. \textrm{``You would cry, too, if you were an orphan and had come to a place you thought was going to be home and found that they didn't want you because you weren't a boy. \textsf{Oh, this is the most tragical thing that ever happened to me!''}}
 
 Something like a reluctant smile, rather rusty from long disuse, mellowed Marilla's grim expression.
-
-``Well, don't cry any more. We're not going to turn you out-of-doors tonight. You'll have to stay here until we investigate this affair. What's your name?''
-
-The child hesitated for a moment.
-
-``Will you please call me Cordelia?'' she said eagerly.
-
-``Call you Cordelia? Is that your name?''
-
-``No-o-o, it's not exactly my name, but I would love to be called Cordelia. It's such a perfectly elegant name.''
-
-``I don't know what on earth you mean. If Cordelia isn't your name, what is?''
 
 % ------------------------------------------------------------
 % \section{Switches within Commands}
 % ------------------------------------------------------------
-The most recent switch was monospace, so this paragraph begins in monospace. But the first command alters the font family to be sans-serif...
+The font family is monospace here, \textsf{but inside this command, it is sans-serif. \rmfamily A switch inside this command turns the font-family to serf.} Outside the command, the font family continues to be monospace.
 
+\textrm{This command surround an entire paragraph so the entire paragraph should be serif. \ttfamily On the contrary, a switch in the command reverts the font family to monospace, \sffamily but another switch changes the font family to sans-serf!}
 
-``Anne Shirley,'' reluctantly faltered forth the owner of that name, ``but, oh, please do call me Cordelia. It can't matter much to you what you call me if I'm only going to be here a little while, can it? And Anne is such an unromantic name.''
-
-``Unromantic fiddlesticks!'' said the unsympathetic Marilla. ``Anne is a real good plain sensible name. You've no need to be ashamed of it.''
-
-``Oh, I'm not ashamed of it,'' explained Anne, ``only I like Cordelia better. I've always imagined that my name was Cordelia---at least, I always have of late years. When I was young I used to imagine it was Geraldine, but I like Cordelia better now. But if you call me Anne please call me Anne spelled with an E.''
-
-``What difference does it make how it's spelled?'' asked Marilla with another rusty smile as she picked up the teapot.
-
-``Oh, it makes such a difference. It looks so much nicer. When you hear a name pronounced can't you always see it in your mind, just as if it was printed out? I can; and A-n-n looks dreadful, but A-n-n-e looks so much more distinguished. If you'll only call me Anne spelled with an E I shall try to reconcile myself to not being called Cordelia.''
-
-``Very well, then, Anne spelled with an E, can you tell us how this mistake came to be made? We sent word to Mrs. Spencer to bring us a boy. Were there no boys at the asylum?''
-
-``Oh, yes, there was an abundance of them. But Mrs. Spencer said distinctly that you wanted a girl about eleven years old. And the matron said she thought I would do. You don't know how delighted I was. I couldn't sleep all last night for joy. Oh,'' she added reproachfully, turning to Matthew, ``why didn't you tell me at the station that you didn't want me and leave me there? If I hadn't seen the White Way of Delight and the Lake of Shining Waters it wouldn't be so hard.''
-
-``What on earth does she mean?'' demanded Marilla, staring at Matthew.
-
-``She---she's just referring to some conversation we had on the road,'' said Matthew hastily. ``I'm going out to put the mare in, Marilla. Have tea ready when I come back.''
-
-``Did Mrs. Spencer bring anybody over besides you?'' continued Marilla when Matthew had gone out.
-
-``She brought Lily Jones for herself. Lily is only five years old and she is very beautiful and had nut-brown hair. If I was very beautiful and had nut-brown hair would you keep me?''
-
-``No. We want a boy to help Matthew on the farm. A girl would be of no use to us. Take off your hat. I'll lay it and your bag on the hall table.''
-
-Anne took off her hat meekly. Matthew came back presently and they sat down to supper. But Anne could not eat. In vain she nibbled at the bread and butter and pecked at the crab-apple preserve out of the little scalloped glass dish by her plate. She did not really make any headway at all.
-
-``You're not eating anything,'' said Marilla sharply, eying her as if it were a serious shortcoming. Anne sighed.
-
-``I can't. I'm in the depths of despair. Can you eat when you are in the depths of despair?''
-
-``I've never been in the depths of despair, so I can't say,'' responded Marilla.
-
-``Weren't you? Well, did you ever try to imagine you were in the depths of despair?''
-
-``No, I didn't.''
-
-``Then I don't think you can understand what it's like. It's a very uncomfortable feeling indeed. When you try to eat a lump comes right up in your throat and you can't swallow anything, not even if it was a chocolate caramel. I had one chocolate caramel once two years ago and it was simply delicious. I've often dreamed since then that I had a lot of chocolate caramels, but I always wake up just when I'm going to eat them. I do hope you won't be offended because I can't eat. Everything is extremely nice, but still I cannot eat.''
-
-``I guess she's tired,'' said Matthew, who hadn't spoken since his return from the barn. ``Best put her to bed, Marilla.''
-
-Marilla had been wondering where Anne should be put to bed. She had prepared a couch in the kitchen chamber for the desired and expected boy. But, although it was neat and clean, it did not seem quite the thing to put a girl there somehow. But the spare room was out of the question for such a stray waif, so there remained only the east gable room. Marilla lighted a candle and told Anne to follow her, which Anne spiritlessly did, taking her hat and carpet-bag from the hall table as she passed. The hall was fearsomely clean; the little gable chamber in which she presently found herself seemed still cleaner.
-
-Marilla set the candle on a three-legged, three-cornered table and turned down the bedclothes.
-
-``I suppose you have a nightgown?'' she questioned.
-
-Anne nodded.
-
-% --------------------------------------
-% Switches within commands
-% --------------------------------------
-
-``Yes, I have two. The matron of the asylum made them for me. They're fearfully skimpy. There is never enough to go around in an asylum, so things are always skimpy---at least in a poor asylum like ours. I hate skimpy night-dresses. But one can dream just as well in them as in lovely trailing ones, with frills around the neck, that's one consolation.''
-
-``Well, undress as quick as you can and go to bed. I'll come back in a few minutes for the candle. I daren't trust you to put it out yourself. You'd likely set the place on fire.''
-
-% Switches within commands
-When Marilla had gone Anne looked around her wistfully. The whitewashed walls were so painfully bare and staring that she thought they must ache over their own bareness. The floor was bare, too, except for a round braided mat in the middle such as Anne had never seen before. In one corner was the bed, a high, old-fashioned one, with four dark, low-turned posts. In the other corner was the aforesaid three-cornered table adorned with a fat, red velvet pincushion hard enough to turn the point of the most adventurous pin. Above it hung a little six-by-eight mirror. Midway between table and bed was the window, with an icy white muslin frill over it, and opposite it was the wash-stand. The whole apartment was of a rigidity not to be described in words, but which sent a shiver to the very marrow of Anne's bones. With a sob she hastily discarded her garments, put on the skimpy nightgown and sprang into bed where she burrowed face downward into the pillow and pulled the clothes over her head. When Marilla came up for the light various skimpy articles of raiment scattered most untidily over the floor and a certain tempestuous appearance of the bed were the only indications of any presence save her own.
+The next paragraph's font family is still monospace and \texttt{continues to be monospace inside this command until a switch is encountered! \sffamily Now the font is sans-serif, \rmfamily and now it is serif!} Outside the command, the font family continues to be mundane monospace.
 
 % Outside the above command, the previous switch was \ttfamily
-She deliberately picked up Anne's clothes, placed them neatly on a prim yellow chair, and then, taking up the candle, went over to the bed.
 
-``Good night,'' she said, a little awkwardly, but not unkindly.
+% Chapter 3, Marilla Cuthbert Is Surprised
+``Well, don't cry any more. \textsf{We're not going to turn you out-of-doors tonight. \rmfamily You'll have to stay here until we investigate this affair.} What's your name?''
 
-Anne's white face and big eyes appeared over the bedclothes with a startling suddenness.
+\textrm{The child hesitated \ttfamily for a moment.}
 
-``How can you call it a good night when you know it must be the very worst night I've ever had?'' she said reproachfully.
+\textrm{``Will you please call me Cordelia?'' \sffamily she said eagerly.}
 
-Then she dived down into invisibility again.
+``Call you Cordelia? Is that your name?''
 
-Marilla went slowly down to the kitchen and proceeded to wash the supper dishes. Matthew was smoking---a sure sign of perturbation of mind. He seldom smoked, for Marilla set her face against it as a filthy habit; but at certain times and seasons he felt driven to it and then Marilla winked at the practice, realizing that a mere man must have some vent for his emotions.
+\texttt{``No-o-o, it's not exactly my name, \sffamily but I would love to be called Cordelia. \rmfamily It's such a perfectly elegant name.''}
 
-% Outside the above command, the previous switch was \ttfamily
-``Well, this is a pretty kettle of fish,'' she said wrathfully. ``This is what comes of sending word instead of going ourselves. Richard Spencer's folks have twisted that message somehow. One of us will have to drive over and see Mrs. Spencer tomorrow, that's certain. This girl will have to be sent back to the asylum.''
-
-``Yes, I suppose so,'' said Matthew reluctantly.
-
-``You suppose so! Don't you know it?''
-
-% Outside the above command, the previous switch was \ttfamily
-``Well now, she's a real nice little thing, Marilla. It's kind of a pity to send her back when she's so set on staying here.''
-
-``Matthew Cuthbert, you don't mean to say you think we ought to keep her!''
-
-Marilla's astonishment could not have been greater if Matthew had expressed a predilection for standing on his head.
-
-% Outside the above command, the previous switch was \ttfamily
-``Well, now, no, I suppose not---not exactly,'' stammered Matthew, uncomfortably driven into a corner for his precise meaning. ``I suppose---we could hardly be expected to keep her.''
-
-``I should say not. What good would she be to us?''
+``I don't know what on earth you mean. If Cordelia isn't your name, what is?''
 
 \end{document}
