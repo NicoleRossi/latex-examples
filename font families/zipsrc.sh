@@ -1,4 +1,3 @@
-#!/usr/local/bin/bash
 rm "font families example.zip"
 mkdir "font families example"
 cp commands.tex "font families example/commands.tex"
