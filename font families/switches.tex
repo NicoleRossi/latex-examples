@@ -11,37 +11,42 @@
 \begin{document}
 \maketitle
 
-% Switches around paragraphs
-As usual, this paragraph begins with an unremarkable sentence that displays the default font family. \sffamily However, in the midst of this paragraph, a switch changes the font to sans-serif. This font will be used in the next paragraph, too!
+% ------------------------------------------------------------
+% Simplest switches
+% ------------------------------------------------------------
+As usual, this paragraph begins with the default font family. However, in the midst of this paragraph, \sffamily a switch updates the font to sans-serif. The new font applies to the following paragraph, too!
 
-This sentence continues in sans-serif until the next switch is encou\ttfamily ntered, and now the font-family is monospace. Rather than insert a code example into this code example to exploit this fixed-width text, \rmfamily the font family returns to serif for the rest of this document.
+This sentence continues in sans-serif until \rmfamily the next switch, and now the font-family is serif. The serif font remains active until \ttfamily the subsequent switch, and then the font family becomes monospace. Monospace prevails until the next switch or the document's end.
 
 % Chapter 2, Matthew Cuthbert Is Surprised
 \sffamily ``He's got one about eleven. Her name is Diana.''
 
 ``Oh!'' with a long indrawing of breath. ``What a perfectly lovely name!''
 
-\ttfamily ``Well now, I dunno. There's something dreadful heathenish about it, seems to me. I'd ruther Jane or Mary or some sensible name like that. But when Diana was born there was a schoolmaster boarding there and they gave him the naming of her and he called her Diana.''
+\rmfamily ``Well now, I dunno. There's something dreadful heathenish about it, seems to me. I'd ruther Jane or Mary or some sensible name like that. But when Diana was born there was a schoolmaster boarding there and they gave him the naming of her and he called her Diana.''
 
 ``I wish there had been a schoolmaster like that around when I was born, then. Oh, here we are at the bridge. I'm going to shut my eyes tight. I'm always afraid going over bridges. I can't help imagining that perhaps, just as we get to the middle, they'll crumple up like a jack-knife and nip us. So I shut my eyes. But I always have to open them for all when I think we're getting near the middle. Because, you see, if the bridge did crumple up I'd want to see it crumple. What a jolly rumble it makes! I always like the rumble part of it. Isn't it splendid there are so many things to like in this world? There, we're over. Now I'll look back. Good night, dear Lake of Shining Waters. I always say good night to the things I love, just as I would to people. I think they like it. That water looks as if it was smiling at me.''
 
-\rmfamily When they had driven up the further hill and around a corner Matthew said:
+\ttfamily When they had driven up the further hill and around a corner Matthew said:
 
 ``We're pretty near home now. That's Green Gables over---''
 
+% ------------------------------------------------------------
 % Blocks around switches
-{\sffamily The text before this block is serif, but inside this block, a switch makes the text sans-serif!}
+% ------------------------------------------------------------
+{\sffamily The text before this block is monospace, but inside this block, a switch makes the text sans-serif and variable-width!}
 
-The switch's effect does not affect any text outside the block, and thus, the font is serif yet again.
+The previous block and its switch have no effect on external text. So, the font is monospace again.
 
-{\ttfamily Inside this next block, the monospace switch makes the text fixed-width. Still no code examples within this code example exist to make this paragraph multiline.}
+{\rmfamily This block and its switch change the font family to variable-width serif. A second sentence guarantees this paragraph will word wrap.}
 
-Externally, the text is serif and variable-width.
+Outside, the paragraph's text remains monospace and fixed-width. This obligatory sentence encourages word wrapping.
 
-{\rmfamily A switch inside this block maintains the serif text, and no visual difference is apparent.}
+{\ttfamily A switch inside this block maintains the monospace font family, and no visual difference is apparent.}
 
-As expected, the text is still serif here.
+As expected, the text is monospace here. Further paragraphs will continue to be monospace until the next switch or block.
 
+% Chapter 2, Matthew Cuthbert Is Surprised
 {\sffamily``Oh, don't tell me,'' she interrupted breathlessly, catching at his partially raised arm and shutting her eyes that she might not see his gesture. ``Let me guess. I'm sure I'll guess right.''
 
 She opened her eyes and looked about her. They were on the crest of a hill. The sun had set some time since, but the landscape was still clear in the mellow afterlight. To the west a dark church spire rose up against a marigold sky. Below was a little valley and beyond a long, gently-rising slope with snug farmsteads scattered along it. From one to another the child's eyes darted, eager and wistful. At last they lingered on one away to the left, far back from the road, dimly white with blossoming trees in the twilight of the surrounding woods. Over it, in the stainless southwest sky, a great crystal-white star was shining like a lamp of guidance and promise.}
@@ -67,21 +72,37 @@ Marilla came briskly forward as Matthew opened the door. But when her eyes fell 
 
 ``Matthew Cuthbert, who's that?'' she ejaculated. ``Where is the boy?''
 
+% ------------------------------------------------------------
+% Overriding switches in blocks
+% ------------------------------------------------------------
+
+% ------------------------------------------------------------
 % Commands within switches
-% Switches within commands
+% ------------------------------------------------------------
+\sffamily A switch facilitates an immediate, radical departure from the default font family. Unfortunately, l and I somewhat undermine Sans-serif's reputation for clarity and readability \textrm{because l and I are very distinctive in serif. Yet 1 and l are hard to distinguish in serif} while 1 and l are clear in sans-serif.
 
-``There wasn't any boy,'' said Matthew wretchedly. ``There was only her.''
 
-He nodded at the child, remembering that he had never even asked her name.
+ \texttt{Using a command temporarily introduces monospace,} but the external text is still sans-serif. 
+% \ttfamily
 
-``No boy! But there must have been a boy,'' insisted Marilla. ``We sent word to Mrs. Spencer to bring a boy.''
+% \rmfamily
+
+% Chapter 3, Marilla Cuthbert Is Surprised
+\sffamily ``There wasn't any boy,'' \texttt{said Matthew wretchedly.} ``There was only her.''
+
+He nodded at the child, \textrm{remembering that he had never even} asked her name.
+
+\ttfamily``No boy! But there must have been a boy,'' insisted Marilla. ``We sent word to Mrs. Spencer to bring a boy.''
 
 ``Well, she didn't. She brought her. I asked the stationmaster. And I had to bring her home. She couldn't be left there, no matter where the mistake had come in.''
 
-``Well, this is a pretty piece of business!'' ejaculated Marilla.
+\rmfamily``Well, this is a pretty piece of business!'' ejaculated Marilla.
 
 During this dialogue the child had remained silent, her eyes roving from one to the other, all the animation fading out of her face. Suddenly she seemed to grasp the full meaning of what had been said. Dropping her precious carpet-bag she sprang forward a step and clasped her hands.
 
+% ------------------------------------------------------------
+% Switches within commands
+% ------------------------------------------------------------
 ``You don't want me!'' she cried. ``You don't want me because I'm not a boy! I might have expected it. Nobody ever did want me. I might have known it was all too beautiful to last. I might have known nobody really did want me. Oh, what shall I do? I'm going to burst into tears!''
 
 Burst into tears she did. Sitting down on a chair by the table, flinging her arms out upon it, and burying her face in them, she proceeded to cry stormily. Marilla and Matthew looked at each other deprecatingly across the stove. Neither of them knew what to say or do. Finally Marilla stepped lamely into the breach.
@@ -151,6 +172,10 @@ Marilla set the candle on a three-legged, three-cornered table and turned down t
 ``I suppose you have a nightgown?'' she questioned.
 
 Anne nodded.
+
+% --------------------------------------
+% Switches within commands
+% --------------------------------------
 
 ``Yes, I have two. The matron of the asylum made them for me. They're fearfully skimpy. There is never enough to go around in an asylum, so things are always skimpy---at least in a poor asylum like ours. I hate skimpy night-dresses. But one can dream just as well in them as in lovely trailing ones, with frills around the neck, that's one consolation.''
 
