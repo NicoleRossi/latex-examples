@@ -1,0 +1,8 @@
+rm "quotes revisited.zip"
+mkdir "quotes revisited"
+cp commands.tex "quotes revisited/commands.tex"
+cp commands.pdf "quotes revisited/commands.pdf"
+cp switches.tex "quotes revisited/switches.tex"
+cp switches.pdf "quotes revisited/switches.pdf"
+zip -r "quotes revisited.zip" "quotes revisited"
+rm -rf "quotes revisited"
