@@ -1,0 +1,8 @@
+rm "font sizes example.zip"
+mkdir "font sizes example"
+cp commands.tex "font sizes example/commands.tex"
+cp commands.pdf "font sizes example/commands.pdf"
+cp switches.tex "font sizes example/switches.tex"
+cp switches.pdf "font sizes example/switches.pdf"
+zip -r "font sizes example.zip" "font sizes example"
+rm -rf "font sizes example"
