@@ -1,0 +1,40 @@
+% Anne of Green Gables from Project Gutenberg:
+% https://www.gutenberg.org/cache/epub/45/pg45-images.html
+% Excerpts from Chapter 3, Marilla Cuthbert Is Surprised;
+% Chapter 4, Morning at Green Gables;
+% Chapter 5, Anne's History;
+% Chapter 6, Marilla Makes Up Her Mind;
+% Chapter 7, Anne Says Her Prayers; and
+% Chapter 7, Anne's Bringing-up Is Begun
+\documentclass[a4paper]{article}
+
+\title{Anne of Green Gables}
+\author{Lucy Maud Montgomery}
+\date{06/13/1908}
+
+\begin{document}
+\maketitle
+
+% The outer font size is larger than the block's
+\Huge This is the hugest font size in LaTeX, and its name is ``Huge.'' This paragraph is outside of a block.
+
+{\tiny This is the tiniest font size in LaTeX, and its name is ``tiny.'' This single paragraph is inside a block, and so it is simultaneously first and list. Therefore, the leading quirk applies. This paragraph should to be long enough to guarantee multiple lines and word wrapping. When this paragraph renders, these ``tiny'' lines have the same height as the ``Huge'' lines outside. Are these teeny-weeny lines even readable!?}
+
+\huge This is the second hugest font size in LaTeX, and its name is ``huge.'' This paragraph is outside of a block.
+
+{\scriptsize This is the second tiniest font size in LaTeX, and its name is ``scriptsize.'' This block contains 2 paragraphs to clearly demonstrate that the leading quirk only applies to the last paragraph. ``Lead'' in ``leading'' is pronounced like the metal or chemical element. Lead's symbol in the periodic table is Pb, and in this paragraph, leading is normal.
+
+However, the font size outside this block determines the last paragraph's leading. The word ``leading'' comes from the days of the printing press (1700s). Strips of lead separated lines of moveable type and potentially enhanced readability. Regarding line height, Matthew Butterick recommends 120 to 145 percent of the font size so ideal leading is between 20 and 45 percent.}
+
+% The outer font size is smaller than the block's
+\footnotesize This is the third smallest font size in LaTeX, and its name is ``footnotesize.'' This paragraph is outside of a block, so its leading is correct. In CSS, the best way to set line-height is a multiple (no units!) of the font size, so using Matthew Butterick's numbers, the range is 1.25 through 1.45. The quick brown fox jumps over the lazy dog to fill out this paragraph!
+
+{\LARGE This is the third largest font size in LaTeX, and its name is ``LARGE.'' This single paragraph is simultaneously first and last, so the leading issue applies. Since ``LARGE'' is bigger than ``footnote,'' this text is crammed together!}
+
+\small This is the fourth smallest font size in LaTeX, and its name is ``small.'' This paragraph is outside of a block, so its leading is correct.
+
+{\Large This is the fourth largest font size in LaTeX, and its name is ``Large''. This block contains 2 paragraphs to clearly demonstrate that the leading quirk only applies to the last paragraph.
+
+Obviously, the leading quirk only applies to the last paragraph. This obligatory sentence encourages word wrapping.}
+
+\end{document}
