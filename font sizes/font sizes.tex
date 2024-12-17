@@ -26,7 +26,21 @@
 
 However, the font size outside this block determines the last paragraph's leading. The word ``leading'' comes from the days of the printing press (1700s). Strips of lead separated lines of moveable type and potentially enhanced readability. Regarding line height, Matthew Butterick recommends 120 to 145 percent of the font size, so ideal leading is between 20 and 45 percent.}
 
+% The outer font size is smaller than the block's
+\footnotesize This is the third smallest font size in \LaTeX, and its name is ``footnotesize.'' This paragraph is outside of a block, so its leading is correct. In CSS, a unitless number (e.g., a multiple of the font size) is the best type of value for the line-height attribute.  Using Matthew Butterick's numbers, the range is 1.25 through 1.45.
+
+{\LARGE This is the third largest font size in \LaTeX, and its name is ``LARGE,'' in all caps. This single paragraph is simultaneously first and last, so the leading issue applies. Unfortunately,``LARGE'' is bigger than ``footnote''  so this text is crammed together!}
+
+\small This is the fourth smallest font size in \LaTeX, and its name is ``small.'' This paragraph is outside of a block, so its leading is correct. In CSS, an em is equal to the current font size so responsive websites use ems to implement relative font sizing. \LaTeX's 10 font size names support a similar relative font size system; an em would be equivalent to normalsize.
+
+{\Large This is the fourth largest font size in \LaTeX, and its name is ``Large'' with a capital ``L.'' This block's first paragraph has normal, comfy leading, and so it is pleasant to read.
+
+This is the second and last paragraph of this block, so the leading quirk applies. Because ``Large'' is bigger than ``small,'' this text is squished together! Matthew Butterick would be appalled.}
+
+
 % Chapter 3, Marilla Cuthbert Is Surprised
+
+% The outer font size is larger than the block's
 \Huge ``I don't know what on earth you mean. If Cordelia isn't your name, what is?''
 
 {\tiny ``Anne Shirley,'' reluctantly faltered forth the owner of that name, ``but, oh, please do call me Cordelia. It can't matter much to you what you call me if I'm only going to be here a little while, can it? And Anne is such an unromantic name.''}
@@ -40,17 +54,6 @@ However, the font size outside this block determines the last paragraph's leadin
 ``Oh, it makes such a difference. It looks so much nicer. When you hear a name pronounced can't you always see it in your mind, just as if it was printed out? I can; and A-n-n looks dreadful, but A-n-n-e looks so much more distinguished. If you'll only call me Anne spelled with an E I shall try to reconcile myself to not being called Cordelia.''}
 
 % The outer font size is smaller than the block's
-\footnotesize This is the third smallest font size in \LaTeX, and its name is ``footnotesize.'' This paragraph is outside of a block, so its leading is correct. In CSS, a unitless number (e.g., a multiple of the font size) is the best type of value for the line-height attribute.  Using Matthew Butterick's numbers, the range is 1.25 through 1.45.
-
-{\LARGE This is the third largest font size in \LaTeX, and its name is ``LARGE,'' in all caps. This single paragraph is simultaneously first and last, so the leading issue applies. Unfortunately,``LARGE'' is bigger than ``footnote''  so this text is crammed together!}
-
-\small This is the fourth smallest font size in \LaTeX, and its name is ``small.'' This paragraph is outside of a block, so its leading is correct. In CSS, an em is equal to the current font size so responsive websites use ems to implement relative font sizing. \LaTeX's 10 font size names support a similar relative font size system; an em would be equivalent to normalsize.
-
-{\Large This is the fourth largest font size in \LaTeX, and its name is ``Large'' with a capital ``L.'' This block's first paragraph has normal, comfy leading, and so it is pleasant to read.
-
-This is the second and last paragraph of this block, so the leading quirk applies. Because ``Large'' is bigger than ``small,'' this text is squished together! Matthew Butterick would be appalled.}
-
-% Chapter 3, Marilla Cuthbert Is Surprised
 \footnotesize ``Very well, then, Anne spelled with an E, can you tell us how this mistake came to be made? We sent word to Mrs. Spencer to bring us a boy. Were there no boys at the asylum?''
 
 ``Oh, yes, there was an abundance of them. But Mrs. Spencer said distinctly that you wanted a girl about eleven years old. And the matron said she thought I would do. You don't know how delighted I was. I couldn't sleep all last night for joy. Oh,'' she added reproachfully, turning to Matthew, ``why didn't you tell me at the station that you didn't want me and leave me there? If I hadn't seen the White Way of Delight and the Lake of Shining Waters it wouldn't be so hard.''
