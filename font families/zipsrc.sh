@@ -6,3 +6,7 @@ cp switches.tex "font families example/switches.tex"
 cp switches.pdf "font families example/switches.pdf"
 zip -r "font families example.zip" "font families example"
 rm -rf "font families example"
+rm *.aux
+rm *.log
+rm *.out
+rm *.synctex.gz
